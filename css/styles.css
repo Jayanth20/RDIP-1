@@ -10,10 +10,22 @@ td {
     text-align: center;
 }
 
-.headings img {
+.headings #imglink {
+    float: right;
+}
+
+.headings iframe {
     float: right;
     width: 200px;
     height: 100px;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 caption {
