@@ -7,14 +7,27 @@
 <body>
     <h2>Course Registration</h2>
     <form>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" required="required" placeholder="First Name"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname" required="required" placeholder="Last Name"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required="required" placeholder="Name"><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="number" id="phone" name="phone" required="required"><br><br>
+        <label for="degree">Choice of Course</label><br>
         <input type="radio" id="bachelors" name="Bachelors" value="Bachelors">
-        <label for="bachelor">Bachelors</label><br>
+        <label for="bachelors">Bachelors</label><br>
         <input type="radio" id="masters" name="Degree" value="Masters">
         <label for="masters">Masters</label><br><br>
+        <label>Description</label><br>
+        <textarea name="message" id="description" cols="20" rows="5"></textarea><br><br>
+        <label>Subject Interests</label><br>
+        <input type="checkbox" id="software development" name="software development">
+        <label for="software development"> Software Development</label><br>
+        <input type="checkbox" id="aiml" name="aiml">
+        <label for="aiml"> AI/ML</label><br>
+        <input type="checkbox" id="cloud" name="cloud">
+        <label for="cloud"> Cloud Computing</label><br>
+        <input type="checkbox" id="maths" name="maths">
+        <label for="maths"> Mathematics</label><br><br>
+
         <input type="submit" value="Submit">
         <button formaction="courses.html">Back</button>
     </form>
