@@ -73,7 +73,12 @@ td {
   background-color: #4CAF50;
   color: white;
 }
-
+.container{
+  outline-style: dotted;
+  outline-color: coral;
+  outline-width: 5px;
+  margin: 15px;
+}
 caption {
   text-align: left;
     font-size: 20px;
@@ -86,7 +91,13 @@ caption {
     margin-right: auto;
 }*/
 .table{
+  margin-top: 20px;
   margin-left: 50px;
+  outline-style: dotted;
+  outline-color: coral;
+  outline-width: 5px;
+  outline-offset: 10px;
+  margin-right:100px;
 }
 table,
 th,
