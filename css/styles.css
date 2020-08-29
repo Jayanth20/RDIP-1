@@ -42,6 +42,8 @@ td {
   height: 150px;
   float: right;
   margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .profilepic a{
   text-decoration: none;
