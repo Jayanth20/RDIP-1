@@ -13,7 +13,6 @@ td {
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
 }
 
 .headings a{
@@ -44,7 +43,7 @@ td {
   border:none;
   width: 150px;
   height: 150px;
-  float: left;
+  float: right;
   margin-right: 50px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -102,18 +101,29 @@ caption {
   outline-width: 5px;
   outline-offset: 10px;
   margin-right:100px;
+  border-collapse: collapse;
 }
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid #ddd;
+    padding: 8px;
 }
-.table #course{
-  text-align: left;
+
+.table tr:nth-child(even){
+  background-color: #f2f2f2;
 }
-.table #marks{
-  text-align: right;
+.table tr:hover{
+  background-color: #ddd;
 }
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: lightblue;
+  color: #333;
+}
+
 .register-button{
   padding: 10px 10px;
   background-color: #000;
@@ -188,9 +198,6 @@ ul.ml li{
 }
 .reg-form label{
   font-weight: 500;
-}
-[class$="table"]{
-  background-color: lightblue;
 }
 .profilepicc img{
   display: none;
