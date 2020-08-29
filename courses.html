@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <h3>Courses Undertaken</h3>
+  <div class="logo">
+    <a href="https://www.iiit.ac.in/" target="_blank">
+      <img src="images/iiit-new.png" alt="iiith-logo">
+    </a>
+  </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">My Courses</a>
+    </div>
+    <div class="headings">
+        <h3>Courses Undertaken</h3>
+    </div>
     <ol>
         <li>Problem Solving & Programming</li>
         <li>Problem Solving & Object-Oriented Programming</li>
@@ -48,7 +61,8 @@
         <li>Applied Numerical Methods</li>
         <li>Statistics for Engineers</li>
     </ol>
-    <a href="form.html">Register</a>
-</body>
+    <button class="register-button" onclick="location.href = 'form.html';">Register for Courses</button>
+    <input type="button" id="back" value="Back" onclick="location.href='index.html';">
+    </body>
 
 </html>

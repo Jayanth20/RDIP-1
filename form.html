@@ -2,7 +2,7 @@
 
 <head>
     <title>Register Form</title>
-    <script LANGUAGE="JavaScript" type="text/javascript">
+    <!--<script LANGUAGE="JavaScript" type="text/javascript">
         function display() {
             DispWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=300,height=200')
             message = "<ul><li><b>NAME: </b>" + document.form1.name.value;
@@ -16,12 +16,26 @@
             message += "<li><b>Mathematics: </b>" + document.form1.maths.value + "</ul>";
             DispWin.document.write(message);
         }
-    </script>
+    </script>-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <h2>Course Registration</h2>
-    <form name="form1">
+  <div class="logo">
+    <a href="https://www.iiit.ac.in/" target="_blank">
+      <img src="images/iiit-new.png" alt="iiith-logo">
+    </a>
+  </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">My Courses</a>
+    </div>
+    <div class="headings">
+      <h3>Course Registration</h3>
+    </div>
+    <div class="reg-form">
+      <form name="form1" method="GET">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required="required" placeholder="Name"><br><br>
         <label for="phone">Phone Number:</label><br>
@@ -42,10 +56,10 @@
         <label for="cloud"> Cloud Computing</label><br>
         <input type="checkbox" id="maths" name="maths">
         <label for="maths"> Mathematics</label><br><br>
-
-        <input type="button" value="Submit" onclick="display();">
-
+        <input id="back" type="button" value="Submit" onclick="display();">
+        <input type="button" id="back" value="Back" onclick="location.href='courses.html';">
     </form>
+  </div>
 
 </body>
 
