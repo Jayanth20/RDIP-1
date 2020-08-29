@@ -108,6 +108,12 @@ th,
 td {
     border: 1px solid black;
 }
+.table #course{
+  text-align: left;
+}
+.table #marks{
+  text-align: right;
+}
 .register-button{
   padding: 10px 10px;
   background-color: #000;
