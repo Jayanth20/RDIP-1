@@ -183,3 +183,6 @@ ul.ml li{
 .reg-form label{
   font-weight: 500;
 }
+[class$="table"]{
+  background-color: lightblue;
+}
