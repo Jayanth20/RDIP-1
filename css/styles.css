@@ -186,3 +186,6 @@ ul.ml li{
 [class$="table"]{
   background-color: lightblue;
 }
+.profilepicc img{
+  display: none;
+}
