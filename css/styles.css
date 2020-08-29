@@ -13,7 +13,7 @@ td {
 
 .headings a{
   text-decoration: none;
-  color: #333;
+  color:
 }
 .logo img{
   width: 180px;
@@ -102,6 +102,21 @@ td {
   font-weight: 400;
   font-family: 'Montserrat';
 }
+button:link{
+  text-decoration: none;
+}
+button:visited{
+  background-color: lightgreen;
+}
+button:hover{
+  background-color: #ddd;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:active{
+  background-color: red;
+}
 #back{
   padding: 10px 10px;
   background-color: #000;
@@ -120,12 +135,7 @@ td {
   transition: 0.5s;
 }
 
-button:hover{
-  background-color: #ddd;
-  color: #000;
-  cursor: pointer;
-  transition: 0.5s;
-}
+
 .reg-form{
   margin-left: 50px;
 }
