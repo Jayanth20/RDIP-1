@@ -134,7 +134,31 @@ button:active{
   cursor: pointer;
   transition: 0.5s;
 }
-
+ul.dsa{
+  list-style-position: inside;
+  list-style-type: disc;
+}
+ul.ml{
+  list-style-type:lower-alpha;
+  list-style-position: outside;
+}
+ul.dsa{
+  background: #3399ff;
+  padding: 20px;
+}
+ul.ml{
+  background: #3399ff;
+  margin: 5px;
+}
+ul.dsa li{
+  background: #cce5ff;
+  margin: 5px;
+}
+ul.ml li{
+  background: #cce5ff;
+  margin: 5px;
+  padding: 5px;
+}
 
 .reg-form{
   margin-left: 50px;
