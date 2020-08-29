@@ -9,6 +9,10 @@ td {
 .headings {
     text-align: left;
     margin-left: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .headings a{
