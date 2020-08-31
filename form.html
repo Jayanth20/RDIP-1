@@ -36,11 +36,11 @@
       <h3>Course Registration</h3>
     </div>
     <div class="reg-form">
-      <form name="form1" method="GET">
+      <form name="form1" onsubmit="validate()" method="GET">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required="required" placeholder="Name"><br><br>
+        <input type="text" id="name" name="name"><br><br>
         <label for="phone">Phone Number:</label><br>
-        <input type="number" id="phone" name="phone" required="required"><br><br>
+        <input type="text" id="phone" name="phone"><br><br>
         <label>Choice of Course</label><br>
         <input type="radio" id="bdegree" name="Bachelors" value="Bachelors">
         <label for="bdegree">Bachelors</label><br>
@@ -49,19 +49,46 @@
         <label>Description</label><br>
         <textarea name="message" id="text" cols="20" rows="5"></textarea><br><br>
         <label>Subject Interests</label><br>
-        <input type="checkbox" id="softwaredevelopment" name="software development">
+        <input type="checkbox" id="softwaredevelopment" name="interest[]">
         <label for="softwaredevelopment"> Software Development</label><br>
-        <input type="checkbox" id="aiml" name="aiml">
+        <input type="checkbox" id="aiml" name="interest[]">
         <label for="aiml"> AI/ML</label><br>
-        <input type="checkbox" id="cloud" name="cloud">
+        <input type="checkbox" id="cloud" name="interest[]">
         <label for="cloud"> Cloud Computing</label><br>
-        <input type="checkbox" id="maths" name="maths">
+        <input type="checkbox" id="maths" name="interest[]">
         <label for="maths"> Mathematics</label><br><br>
-        <input id="back" type="button" value="Submit" onclick="display();">
+        <input id="submit" type="submit" value="Submit">
         <input type="button" id="back" value="Back" onclick="location.href='courses.html';">
     </form>
   </div>
-
+  <script>
+    function validate() {
+      var x = document.forms["form1"]["phone"].value;
+      var valid = false;
+      if (isNaN(x)) {
+        alert("Phone number must contain only digits!!");
+        return false;
+      }
+      if(document.getElementById('softwaredevelopment').checked){
+        valid=true;
+      }
+      else if(document.getElementById('aiml').checked){
+        valid=true;
+      }
+      else if(document.getElementById('cloud').checked){
+        valid=true;
+      }
+      else if(document.getElementById('maths').checked){
+        valid=true;
+      }
+      if(valid){
+        alert("Form successfully submitted!");
+      }else{
+        alert("Please select atleast one subject of interest");
+        return false;
+      }
+    }
+  </script>
 </body>
 
 </html>
