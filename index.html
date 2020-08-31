@@ -95,6 +95,10 @@
                 <td id="cdi" value='74'>74</td>
             </tr>
             <tr>
+                <th colspan="3">Total Marks: </th>
+                <td id="sum"></td>
+            </tr>
+            <tr>
                 <th colspan="3">Average: </th>
                 <td id="average"></td>
             </tr>
@@ -103,11 +107,11 @@
           var table = document.getElementById('table');
           var sum = 0;
           var avg = 0;
-          var rowcount = table.rows.length - 2;
-          for( var i = 1; i < table.rows.length - 1; i++){
+          var rowcount = table.rows.length - 3;
+          for( var i = 1; i < table.rows.length - 2; i++){
               sum = sum + parseInt(table.rows[i].cells[3].innerHTML);
           }
-
+          document.getElementById('sum').innerHTML = parseInt(sum);
           document.getElementById('average').innerHTML = parseFloat(sum / rowcount).toFixed(2);
         </script>
     </div>
