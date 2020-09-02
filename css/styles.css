@@ -56,20 +56,19 @@ td {
   overflow: hidden;
 }
 
-.topnav a {
+.navbar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   transition: 0.5s;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
+.navbar a:hover {
   border-radius: 15px;
-  color: black;
+  background: #ddd;
+  color: #333;
 }
 
 .topnav a.active {
@@ -82,48 +81,15 @@ td {
   outline-width: 5px;
   margin: 15px;
 }
-caption {
-  text-align: left;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Montserrat';
-}
-
 /*.center {
     margin-left: auto;
     margin-right: auto;
 }*/
-.table{
-  margin-top: 20px;
+
+#table{
   margin-left: 50px;
-  outline-style: dotted;
-  outline-color: coral;
-  outline-width: 5px;
-  outline-offset: 10px;
-  margin-right:100px;
-  border-collapse: collapse;
-}
-table,
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.table tr:nth-child(even){
-  background-color: #f2f2f2;
-}
-.table tr:hover{
-  background-color: #ddd;
-}
-.table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
   text-align: center;
-  background-color: lightblue;
-  color: #333;
 }
-
 .register-button{
   padding: 10px 10px;
   background-color: #000;

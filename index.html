@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Jayanth Kumar Tumuluri</title>
+    <!--Bootstrap 4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
@@ -15,10 +22,18 @@
       <a href="https://serc.iiit.ac.in/rdip/" target="_blank">RDIP</a>
     </div>
   </div>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Personal Details</a>
-        <a href="form.html">Registration</a>
+    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Personal Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Registration</a>
+        </li>
+      </ul>
     </div>
     <div class="headings">
       <div class='profilepic'>
@@ -30,10 +45,8 @@
         <h3>Vellore Institute of Technology</h3>
         <h4><a href="courses.html">B.Tech Electronics and Computer Engineering</a></h4><br>
     </div>
-
     <div class="table">
-        <table id="table" class="center " style="width:50% ">
-            <caption>6th Semester Marksheet</caption>
+        <table id="table" class="table table-dark table-hover" style="width:50% ">
             <tr>
                 <th>S.No</th>
                 <th id="course">Course Title</th>
